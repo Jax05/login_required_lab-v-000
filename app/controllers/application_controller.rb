@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def current_user
     @current_user = session[:name]
   end
+
+  def logged_in?
+    @current_user.present?
+  end
 end
