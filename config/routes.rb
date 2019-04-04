@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root '/login'
+  root 'sessions#new'
 
   get 'secrets/show'
 
